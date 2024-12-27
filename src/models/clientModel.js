@@ -1,10 +1,10 @@
 const { Schema, model } = require("mongoose");
 
 const clientSchema = new Schema({
-    name: {
-        type: String,
-        required: [true, "Please input the company's name"]
-    },
+    // name: {
+    //     type: String,
+    //     required: [true, "Please input the company's name"]
+    // },
     email: {
         type: String,
         required: [true, "Please enter the email address"]

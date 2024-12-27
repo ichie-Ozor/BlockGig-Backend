@@ -12,7 +12,7 @@ const createTalent = async (req, res, next) => {
 
         if (!fullName || !email || !location || !skill || !experience || !availability || !industry || !portfolio || !req.file) {
             return res.status(400).json({
-                success: true,
+                success: false,
                 message: "Please supply all the fields"
             })
         }
