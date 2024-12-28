@@ -5,7 +5,7 @@ const {
 } = talentService
 
 const createTalent = async (req, res, next) => {
-    console.log(req.body, "from talent controller", req.file)
+    // console.log(req.body, "from talent controller", req.file)
 
     try {
         const { fullName, email, location, skill, experience, availability, industry, portfolio } = req.body
