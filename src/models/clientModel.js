@@ -17,6 +17,10 @@ const clientSchema = new Schema({
         type: String,
         required: [true, "Enter the type of talent you are looking for"]
     },
+    skill: {
+        type: String,
+        required: [true, "Enter the type of skill you are looking for"]
+    },
     positions: {
         type: Number,
         required: [true, "Enter the number of positions needed"]

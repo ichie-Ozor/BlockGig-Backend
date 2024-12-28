@@ -10,7 +10,7 @@ const createClient = async (req, res, next) => {
     try {
         const { email, location, talent, positions, jobtype, webaddress, payment, comment } = req.body
 
-        if (!email || !location || !talent || !positions || !jobtype || !webaddress || !payment || !comment) {
+        if (!email || !location || !talent || !skill || !positions || !jobtype || !webaddress || !payment || !comment) {
             return res.status(400).json({
                 success: false,
                 message: "Please supply all the fields"
