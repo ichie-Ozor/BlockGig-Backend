@@ -23,6 +23,7 @@ const createClient = async (req, res, next) => {
             message: "Client successfully created"
         })
     } catch (error) {
+        console.log(error, "errorrrrrrrrr")
         res.status(500).json({
             success: false,
             message: "Something went wrong while trying to create the client account"
