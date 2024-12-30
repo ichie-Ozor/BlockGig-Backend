@@ -9,6 +9,7 @@ dotenv.config();
 
 const corsOptions = {
     Origin: 'http://localhost:5173',
+    Origin: "https://blockgigs.netlify.app",
     credentials: true,
     optionSucessstatus: 200
 }

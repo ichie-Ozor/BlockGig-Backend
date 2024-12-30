@@ -8,7 +8,7 @@ const createClient = async (req, res, next) => {
     console.log(req.body, "from client controller")
 
     try {
-        const { email, location, talent, positions, jobtype, webaddress, payment, comment } = req.body
+        const { email, location, talent, positions, skill, jobtype, webaddress, payment, comment } = req.body
 
         if (!email || !location || !talent || !skill || !positions || !jobtype || !webaddress || !payment || !comment) {
             return res.status(400).json({
