@@ -22,7 +22,10 @@ var upload = multer({
         if (
             file.mimetype == "application/pdf" ||
             file.mimetype == "application/msword" ||
-            file.mimetype == "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            file.mimetype == "application/vnd.openxmlformats-officedocument.wordprocessingml.document" ||
+            file.mimetype == "image/png" ||
+            file.mimetype == "image/svg+xml" ||
+            file.mimetype == "image/jpeg"
         ) {
             callback(null, true)
         } else {
